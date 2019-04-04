@@ -27,7 +27,7 @@ The rules for reading and writing Roman numerals are as follows:
  1. Only `I`, `X` and `C` can be used as the leading numeral in a subtractive pair. `I` can only come before `V`, while `X` can come before either `L` or `C` and `C` can only come before `D` and `M`.
  1. `D`, `L` and `V` are only allowed to appear once in a valid numeral - so `VIV` is an invalid way to write the value `9`.
 
- ## Task 1
+ ## Task 1 - Reading
 
  Write a program that will read a Roman numeral from the user, and tell them if it is valid or not.
 
@@ -35,7 +35,7 @@ The rules for reading and writing Roman numerals are as follows:
 
  Write some unit tests that test your code, and check that it follows the above rules correctly. Ask for help if you aren't sure how to include a testing library such as JUnit in your project.
 
- ## Minimality
+ ## Task 2 - Writing (minimally)
 
  Even with these strict rules, there are often multiple ways to write the same value:
 
@@ -48,7 +48,7 @@ Extend your program so that the user can enter a normal number, and have your pr
 
 Write some more unit tests as you go.
 
-## Rewriting Roman numerals
+## Task 3 -  Rewriting
 
 Now that you're able to both read and write Roman numerals, you should be able to load all of the numerals from [this file](roman_numerals.txt) (from [Project Euler](https://projecteuler.net/problem=89)) and:
 

@@ -21,10 +21,10 @@ The rules for reading and writing Roman numerals are as follows:
  1. The symbols in a numeral are added up to get the final value of the numeral
  1. Symbols must be arranged in decreasing order of size, unless part of a subtractive pair (see rules 5-7).
  1. You are not allowed to write down combinations of smaller symbols that would add up to a value equal to or larger than `M`, `C` or `X` - for example `VV` is invalid because that would sum to the same as `X`, and `LXXXXX` is invalid because that would equal `C`. 
- 1. For other symbols (not `M`, `C` or `C`), the above rule does not apply. For example,`XXXXXX` is fine, because even though that is larger than `L`, `L` is allowed to be exceeded by smaller numerals - only `M`, `C` and `X` cannot.
+ 1. For other symbols (not `M`, `C` or `X`), the above rule does not apply. For example,`XXXXXX` is fine, because even though that is larger than `L`, `L` is allowed to be exceeded by smaller numerals - only `M`, `C` and `X` cannot.
  1. If a symbol appears before a larger symbol, then the first symbol is _subtracted_ from the total instead of added
  1. You cannot have two subtractions in a row, so `IIX` is invalid because both `I` symbols would be subtracted from the `X`.
- 1. Only `I`, `X` and `C` can be used as the leading numeral in a subtractive pair. `I` can only come before `V`, while `X` can come before either `L` or `C` and `C` can only come before `D` and `M`.
+ 1. Only `I`, `X` and `C` can be used as the leading numeral in a subtractive pair. `I` can only come before `V` or `X`, while `X` can come before either `L` or `C` and `C` can only come before `D` and `M`.
  1. `D`, `L` and `V` are only allowed to appear once in a valid numeral - so `VIV` is an invalid way to write the value `9`.
 
  ## Task 1 - Reading
@@ -42,7 +42,7 @@ The rules for reading and writing Roman numerals are as follows:
   - `6` can be written either as `VI` or `IIIIII`.
   - `49` can be written either as `XXXXVIIII` or `XLIX` (among other choices).
 
-We say that a Roman numeral is _minimal_ is it uses as few symbols as possible to represent a particular number. `VI` and `XLIX` are minimal, while `IIIIII` and `XXXXVIIII` are not.
+We say that a Roman numeral is _minimal_ if it uses as few symbols as possible to represent a particular number. `VI` and `XLIX` are minimal, while `IIIIII` and `XXXXVIIII` are not.
 
 Extend your program so that the user can enter a normal number, and have your program convert it to a minimal Roman numeral.
 

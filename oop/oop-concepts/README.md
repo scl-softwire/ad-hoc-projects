@@ -61,18 +61,18 @@ By now, if you've played around at all with your shape classes by writing code i
 
 `Square@25cd5fa`
 
-It would be nice if all shapes automatically had a `toString()` implementation, even without us having to write one! This is possible using a _default method_ on the `TwoDimensionalShape` interface:
+It would be nice if all shapes automatically had a method that you could call to get a nice string form, even without us having to write one! This is possible using a _default method_ on the `TwoDimensionalShape` interface:
 
 ```java
 public interface TwoDimensionalShape {
     //...
-    default String toString() {
+    default String prettyPrint() {
         return "A " + getColour() + " " + getType() + " with perimeter " + getPerimeter() + " and area " + getArea();
     }
 }
 ```
 
-Now anything that implements `TwoDimensionalShape` will automatically pick up a `toString()` implementation. Give it a try!
+Now anything that implements `TwoDimensionalShape` will automatically pick up a `prettyPrint()` implementation. Give it a try!
 
 ## Composition
 

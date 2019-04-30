@@ -95,7 +95,7 @@ The `Prism` constructor should take a `TwoDimensionalShape` base, and a height. 
 public interface ThreeDimensionalShape extends Shape {
     double getSurfaceArea();
     double getVolume();
-    default String toString() { 
+    default String prettyPrint() { 
         //... 
     }
 }

@@ -31,7 +31,7 @@ Inheritance is often referred to as an "is-a" relationship - when class `B` inhe
 
 Define a `Square` class that extends your `Rectangle` class - because a square is just a special case of a rectangle where the width and the height are equal.
 
-`Square` should have its own constructor - one that just takes a single measurement - and then use `super(...)` to call the parent constructor. The other behaviour will be inherited from `Rectangle`.
+`Square` should have its own constructor - one that just takes a single measurement and a colour - and then use `super(...)` to call the parent constructor. The other behaviour will be inherited from `Rectangle`.
 
 ## Interfaces
 
